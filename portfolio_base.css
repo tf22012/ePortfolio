@@ -16,9 +16,22 @@ a:link {
 }
 
 a:hover {
-    color: goldenrod;
+    color: darkgoldenrod
 }
 
 a:active {
     color: goldenrod;
+}
+
+h1 {
+    color: darkcyan 
+}
+
+.contactMethod {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.emails {
+    font-style: italic;
 }
