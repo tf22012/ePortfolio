@@ -4,3 +4,21 @@ Author: Chris Charles
 Date: 2023/02/03
 Description: CSS file for Eportfolio site
 */
+
+body {
+    background-color: palegreen;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+    color: goldenrod;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+a:active {
+    color: goldenrod;
+}
