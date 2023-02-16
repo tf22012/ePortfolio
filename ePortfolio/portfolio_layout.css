@@ -19,16 +19,45 @@ Description: CSS file for mainly resume page layout
     'reContact reProfile reProfile'
     'reSkills reExperience reExperience'
     'reEducation reExperience reExperience';
-    gap: 10px;
     padding: 10px;
     width: 80%;
     margin-left: 10%;
     background-color: white;
 }
 
-
+.grid-container > div{
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
 
 .reHeading{
-    text-align: center;
-    
+    text-align: left;
+}
+
+.reContact{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.reProfile{
+    border-bottom: 1px solid black;
+}
+
+.reSkills{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.reEducation{
+    border-right: 1px solid black;
+}
+
+
+#Resume_Header{
+    margin-left: 8%;
+}
+
+#Career_Title{
+    margin-left: 8%;
 }
