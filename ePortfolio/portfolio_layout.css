@@ -2,5 +2,33 @@
 /*
 Author: Chris Charles
 Date: 2023/02/16
-Description: CSS file of resume page layout 
+Description: CSS file for mainly resume page layout 
 */
+
+.reHeading{ grid-area: reHeading; }
+.reContact{ grid-area: reContact; }
+.reProfile{ grid-area: reProfile; }
+.reSkills{ grid-area: reSkills; }
+.reExperience{ grid-area: reExperience;}
+.reEducation{ grid-area: reEducation; }
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'reHeading reHeading reHeading'
+    'reContact reProfile reProfile'
+    'reSkills reExperience reExperience'
+    'reEducation reExperience reExperience';
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+}
+
+
+
+.reHeading{
+    text-align: center;
+    
+}
