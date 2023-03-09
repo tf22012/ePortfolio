@@ -5,60 +5,88 @@ Date: 2023/02/16
 Description: CSS file for mainly resume page layout 
 */
 
-/*Resume Grid-Layout*/
-.reHeading{ grid-area: reHeading; }
-.reContact{ grid-area: reContact; }
-.reProfile{ grid-area: reProfile; }
-.reSkills{ grid-area: reSkills; }
-.reExperience{ grid-area: reExperience;}
-.reEducation{ grid-area: reEducation; }
 
-.resume-grid-container{
-    display: grid;
-    grid-template-areas: 
-    'reHeading reHeading reHeading'
-    'reContact reProfile reProfile'
-    'reSkills reExperience reExperience'
-    'reEducation reExperience reExperience';
-    padding: 10px;
-    width: 80%;
-    margin-left: 10%;
-    background-color: white;
+
+@media only screen and (max-width: 768px) {
+	/*Mobile Phone*/
+
+    /*Change content to display in 1 column*/
+	.resume-grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .resume-grid-container .reHeading{order: 1;}
+    .resume-grid-container .reContact{order: 2;}
+    .resume-grid-container .reProfile{order: 3;}
+    .resume-grid-container .reSkills{order: 4;}
+    .resume-grid-container .reExperience{order: 5;}
+    .resume-grid-container .reEducation{order: 6;}
+
 }
 
-.resume-grid-container > div{
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+@media only screen and (min-width: 769px) {
+	/*Tablet Phone*/
+
+	/*Resume Grid-Layout*/
+    .reHeading{ grid-area: reHeading; }
+    .reContact{ grid-area: reContact; }
+    .reProfile{ grid-area: reProfile; }
+    .reSkills{ grid-area: reSkills; }
+    .reExperience{ grid-area: reExperience;}
+    .reEducation{ grid-area: reEducation; }
+
+    .resume-grid-container{
+        display: grid;
+        grid-template-areas: 
+        'reHeading reHeading reHeading'
+        'reContact reProfile reProfile'
+        'reSkills reExperience reExperience'
+        'reEducation reExperience reExperience';
+        padding: 10px;
+        width: 80%;
+        margin-left: 10%;
+        background-color: white;
+    }
+
+    .resume-grid-container > div{
+        padding: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .reHeading{
+        text-align: left;
+    }
+
+    .reContact{
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    .reProfile{
+        border-bottom: 1px solid black;
+    }
+
+    .reSkills{
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    .reEducation{
+        border-right: 1px solid black;
+    }
+
+
+    #Resume_Header{
+        margin-left: 8%;
+    }
+
+    #Career_Title{
+        margin-left: 8%;
+    }
 }
 
-.reHeading{
-    text-align: left;
-}
+@media only screen and (min-width: 1024px) {
+	/*Desktop*/
 
-.reContact{
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-}
-
-.reProfile{
-    border-bottom: 1px solid black;
-}
-
-.reSkills{
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-}
-
-.reEducation{
-    border-right: 1px solid black;
-}
-
-
-#Resume_Header{
-    margin-left: 8%;
-}
-
-#Career_Title{
-    margin-left: 8%;
 }
