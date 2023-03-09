@@ -5,6 +5,7 @@ Date: 2023/02/16
 Description: CSS file for mainly resume page layout 
 */
 
+/*Resume Grid-Layout*/
 .reHeading{ grid-area: reHeading; }
 .reContact{ grid-area: reContact; }
 .reProfile{ grid-area: reProfile; }
@@ -12,7 +13,7 @@ Description: CSS file for mainly resume page layout
 .reExperience{ grid-area: reExperience;}
 .reEducation{ grid-area: reEducation; }
 
-.grid-container{
+.resume-grid-container{
     display: grid;
     grid-template-areas: 
     'reHeading reHeading reHeading'
@@ -25,7 +26,7 @@ Description: CSS file for mainly resume page layout
     background-color: white;
 }
 
-.grid-container > div{
+.resume-grid-container > div{
     padding: 20px;
     padding-left: 40px;
     padding-right: 40px;

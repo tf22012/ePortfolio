@@ -5,6 +5,7 @@ Date: 2023/02/03
 Description: CSS file for Eportfolio site
 */
 
+/*Basic CSS Styling Rules for ePortfolio Pages*/
 body {
     background-color: palegreen;
     color: black;
@@ -35,3 +36,4 @@ h1 {
 .emails {
     font-style: italic;
 }
+
