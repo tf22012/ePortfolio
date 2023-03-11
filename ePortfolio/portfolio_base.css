@@ -37,3 +37,17 @@ h1 {
     font-style: italic;
 }
 
+/*Nav Menu CSS Styling*/
+
+li {
+    list-style-type: none;
+    float: left;
+    margin: 0px;
+    padding: 20px;
+    background-color: orange;
+}
+#navagationMenu > li > a {
+    display: block;
+    width: 20%;
+    color: white;
+}
