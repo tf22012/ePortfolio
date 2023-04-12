@@ -4,3 +4,104 @@ Author: Chris Charles
 Date: 2023/04/12
 Description: CSS file for Eportfolio site GoalPage.
 */
+
+h1
+{
+    margin-left: 1.75%;
+}
+
+p
+{
+    margin-left: 5%;
+}
+
+
+.emails 
+{
+    font-style: italic;
+    margin-left: 5%;
+}
+
+
+.contactMethod
+{
+    margin-left: 5%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* Visitor Contact Info Form */
+
+/* test */
+
+form
+{
+    border: darkgreen solid 1px;
+}
+
+h3
+{
+    text-align: center;
+}
+
+.contact label
+{
+    display: block;
+    text-align: center;
+}
+
+input[type="text"], textarea {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+  }  
+
+input, textarea
+{
+    border: green solid 1px;
+    text-align: center;
+}
+
+
+button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    width: 45%;
+  }
+  
+
+/* flex grid layout */
+
+.flex-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.personalContactInfo
+{
+    width: 33%;
+    height: 100%;
+}
+
+.visitorContactInfo
+{
+    width: 33%;
+    height: 100%;
+}
+
+.selfImage
+{
+    height: 100%;
+    width: 33%;
+}
+
+.selfImage img 
+{
+    margin-left: 25%;
+    width: 50%;
+}

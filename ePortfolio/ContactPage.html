@@ -26,13 +26,42 @@
             </div>
         </header>
         <h1>Contact Info</h1>
-        <p class="contactMethod">My Phone numbers:</p> 
-        <p>902-478-6433</p> 
-        <p>902-422-0746</p>
-        <p class="contactMethod">Email Address:</p> 
-        <p class="emails">chris.charles2000@hotmail.com</p> 
-        <p class="emails">w084117@nscc.ca</p>
-
+        <div class="flex-container">
+            <div class="personalContactInfo">
+                <p class="contactMethod">My Phone numbers:</p> 
+                <p>902-478-6433</p> 
+                <p>902-422-0746</p>
+                <p class="contactMethod">Email Address:</p> 
+                <p class="emails">chris.charles2000@hotmail.com</p> 
+                <p class="emails">w084117@nscc.ca</p>
+            </div>
+            <div class="visitorContactInfo">
+                <form class="contact" name="contactMe">
+                    <h3>Contact Me</h3>
+                    <div class="info">
+                      <label> Name: </label>
+                      
+                      <input class="fname" type="text" name="name" placeholder="Full name">
+                      <br>
+                      <label> E-mail: </label>
+                      <input type="text" name="name" placeholder="Email">
+                      <br>
+                      <label> Phone number: </label>
+                      <input type="text" name="name" placeholder="Phone number">
+                    </div>
+                    
+                    <label> Message: </label>
+                    <div>
+                      <textarea rows="4" placeholder="Message"></textarea>
+                    </div>
+                    <br>
+                    <button type="submit">Submit</button>
+                  </form>
+            </div>
+            <div class="selfImage">
+                <img src="Self_Portrait.JPG" alt="Self Image">
+            </div>
+        </div>
     </body>
 
 </html>

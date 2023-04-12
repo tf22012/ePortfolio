@@ -14,6 +14,7 @@ h1
 {
     display: flex;
     flex-wrap: wrap;
+    align-content: space-evenly;
 }
 
 .personalGoals
@@ -44,7 +45,7 @@ h1
 
 .goalImage img
 {
-    margin: auto 0;
+    margin-left: 8%;
     width: 85%;
     height: 90%;
 }
