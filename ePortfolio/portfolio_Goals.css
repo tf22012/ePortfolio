@@ -9,17 +9,19 @@ Description: CSS file for Eportfolio site GoalPage.
 {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .personalGoals
 {
-    flex: 1;
+    width: 50%;
 }
 
 .selfImage
 {
+    float: left;
     margin-left: 20px;
+    width: 50%;
 }
 
 .selfImage img
@@ -27,3 +29,4 @@ Description: CSS file for Eportfolio site GoalPage.
     width: 30%;
     height: 50%;
 }
+
