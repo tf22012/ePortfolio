@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*
+Author: Chris Charles
+Date: 2023/04/11
+Description: CSS file for Eportfolio site GoalPage.
+*/
+
+.flex-containter
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.personalGoals
+{
+    flex: 1;
+}
+
+.selfImage
+{
+    margin-left: 20px;
+}
+
+.selfImage img
+{
+    width: 30%;
+    height: 50%;
+}
