@@ -5,28 +5,47 @@ Date: 2023/04/11
 Description: CSS file for Eportfolio site GoalPage.
 */
 
+h1
+{
+    text-align: center;
+}
+
 .flex-containter
 {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .personalGoals
 {
+    margin-top: 5%;
     width: 50%;
+    height: 100%;
 }
 
-.selfImage
+.personalGoals h2
+
 {
-    float: left;
-    margin-left: 20px;
-    width: 50%;
+    margin-left: 5%;   
 }
 
-.selfImage img
+.personalGoals ol li
 {
-    width: 30%;
-    height: 50%;
+    margin-left: 5%;
+}
+
+.goalImage
+{
+    margin-top: 5%;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+}
+
+.goalImage img
+{
+    margin: auto 0;
+    width: 85%;
+    height: 90%;
 }
 
