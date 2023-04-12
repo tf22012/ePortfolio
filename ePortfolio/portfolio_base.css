@@ -7,9 +7,10 @@ Description: CSS file for Eportfolio site
 
 /*Basic CSS Styling Rules for ePortfolio Pages*/
 body {
-    background-color: palegreen;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: darkgrey;
+    margin: 0;
 }
 
 a:link {
@@ -39,17 +40,18 @@ h1 {
 
 /*Nav Menu CSS Styling*/
 
-/* Outline */
 .menuContainer
 {
     width: 100%;
-    margin: 0 auto;
+    padding: 0;
 }
 
 header
 {
-    border: 1px solid black;
-    background-color: gray;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    
 }
 
 header::after
@@ -62,7 +64,7 @@ header::after
 .menuContainer h1
 {
     float: left;
-    padding-left: 10px;
+    padding-left: 5%;
     color: white;
 }
 
@@ -81,15 +83,16 @@ header::after
 .menuContainer li
 {
     display: inline-block;
-    margin-left: 70px;
+    margin-left: 80px;
     padding-top: 30px;
 }
 
 .menuContainer nav a 
 {
-    color: black;
+    color: green;
     text-decoration: none;
     text-transform: uppercase;
+    font-size: 0.85rem;
 }
 
 /*
