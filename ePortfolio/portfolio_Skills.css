@@ -21,7 +21,7 @@ h1
 {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: normal;
 }
 
 #htmlSkill img
@@ -29,4 +29,60 @@ h1
     width: 50%;
     height: 33%;
     margin-right: 1rem;
+}
+
+#htmlSkill p
+{
+    margin: 0 auto;
+    padding-top: 3.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* CSS Skill Section */
+
+#cssSkill 
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: normal;
+}
+  
+#cssSkill img 
+{
+    margin-left: 1rem;
+    width: 50%;
+    height: 33%;
+}
+
+#cssSkill p
+{
+    margin: 0 auto;
+    padding-top: 6%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* JavaScript Skill Section */
+
+#javascriptSkill
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#javascriptSkill img
+{
+    width: 50%;
+    height: 33%;
+    margin-right: 1rem;
+}
+
+#javascriptSkill p
+{
+    margin: 0 auto;
+    padding-top: 1.25%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
