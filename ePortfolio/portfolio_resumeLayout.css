@@ -13,6 +13,63 @@ h1
 .flex-container
 {
     background-color: white;
+    font-family: "Rockwell", serif;
+    color: gray;
+}
+
+.reName-Container, h1, h2
+{
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Rockwell", serif;
+}
+
+.reName-Container h1
+{
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.reContact-Container ul
+{
+    list-style: none;
+}
+
+.jobTitle
+{
+    color: turquoise;
+    font-weight: bold;
+}
+
+.jobLocation
+{
+    font-weight: bold;
+}
+
+h4
+{
+    font-weight: bold;
+    color: turquoise;
+}
+
+.school
+{
+    color: gray;
+    font-family: "Rockwell", serif;
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 700px
+   =============================================
+*/
+
+@media (min-width: 701px)
+{
+
+    .flex-container
+{
     width: 70%;
     height: 100%;
     display: flex;
@@ -29,17 +86,7 @@ h1
     width: 50%;
 }
 
-.reName-Container h1
-{
-    text-align: left;
-    color: black;
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: "Rockwell", serif;
-    margin-left: 10%;
-    margin-top: 10%;
-
-}
+/* / */
 
 /* Resume Contact Styling */
 .reContact-Container
@@ -50,11 +97,8 @@ h1
 .reContact-Container ul
 {
     text-align: end;
-    list-style: none;
     margin-right: 10%;
     margin-top: 10%;
-    color: grey;
-    font-family: "Rockwell", serif;
 }
 
 /* Resume Intro Styling */
@@ -85,11 +129,6 @@ h1
     font-family: "Rockwell", serif;
 }
 
-.reSkills-Container ul
-{
-    margin-left: -4%;
-}
-
 .reSkills-Container li
 {
     color: gray;
@@ -106,19 +145,6 @@ h1
 
 .reEducation-Container h2
 {
-    font-family: "Rockwell", serif;
-}
-
-h4
-{
-    font-weight: bold;
-    color: turquoise;
-    font-family: "Rockwell", serif;
-}
-
-.school
-{
-    color: gray;
     font-family: "Rockwell", serif;
 }
 
@@ -146,16 +172,87 @@ h4
     color: grey;
 }
 
-.jobTitle
-{
-    color: turquoise;
-    font-weight: bold;
+
+
 }
 
-.jobLocation
+/* =============================================
+   Tablet and Desktop Styles: greater than 700px
+   =============================================
+*/
+
+@media (max-width: 700px) 
 {
-    font-weight: bold;
+    .flex-container
+    {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+
+    .reName-Container   
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .reContact-Container
+    {
+        width: 100%;
+        text-align: left;
+    }
+
+    .reContact-Container ul
+    {
+        width: 100%;
+        text-align: left;
+        margin: 0 2.5%;
+    }
+
+    .reSelfIntro-Container
+    {
+        width: 100%;
+        margin: 0 10%;
+        border-bottom: 1px solid gray;
+    }
+
+    /* Skill Sections */
+    .reSkills-Container
+    {
+        width: 100%;
+        margin: 0 10%;
+        border-bottom: 1px solid gray;
+    }
+
+    .reSkills-Container ul
+    {
+        margin: 5% 0;
+    }
+
+    /* Education Section */
+    .reEducation-Container
+    {
+        width: 100%;
+        margin: 0 10%;
+        border-bottom: 1px solid gray;
+    }
+
+    /* Experice Section */
+    .reExperience-Container
+    {
+        width: 100%;
+        margin: 0 10%;
+    }
 }
+
+
+
+
 /* 
 @media only screen and (max-width: 768px) {
 	/*Mobile Phone*/
