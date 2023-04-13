@@ -80,7 +80,7 @@ html, body
 .menu-button::after 
 {
     display: block;
-    background-color: #fff;
+    background-color: green;
     position: absolute;
     height: 4px;
     width: 30px;
@@ -120,20 +120,20 @@ html, body
 
 /* Footer */ 
 .footer {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: black;
-    color: green;
-    text-align: center;
-    height: 5%;
-    font-size: large;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: green;
+  text-align: center;
+  height: 5%;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* =============================================
    Tablet and Desktop Styles: greater than 700px
