@@ -5,6 +5,10 @@ Date: 2023/02/16
 Description: CSS file for mainly resume page layout 
 */
 
+h1
+{
+    text-align: center;
+}
 
 .flex-container
 {
@@ -27,6 +31,7 @@ Description: CSS file for mainly resume page layout
 
 .reName-Container h1
 {
+    text-align: left;
     color: black;
     font-size: 2rem;
     font-weight: bold;
