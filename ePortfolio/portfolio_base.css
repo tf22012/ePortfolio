@@ -7,43 +7,60 @@ Description: CSS file for Eportfolio site
 
 /*Basic CSS Styling Rules for ePortfolio Pages*/
 
-html, body {
+html, body 
+{
     margin: 0;
     height: 100%;
-  }
-  
-  * {
-    font-family: "Raleway";
+    background-color: darkgray;
+}
+
+* 
+{
     box-sizing: border-box;
-  }
-  
-  .top-nav {
+}
+
+/* Nav Bar Styling */
+
+.top-nav 
+{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #00BAF0;
-    background: linear-gradient(to left, #f46b45, #eea849);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #FFF;
+    background-color: black;
     height: 50px;
     padding: 1em;
-  }
-  
-  .menu {
+}
+
+.top-nav h1
+{
+    color: azure;
+}
+
+
+.menu 
+{
     display: flex;
     flex-direction: row;
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .menu > li {
+}
+
+.menu a
+{
+    color: green;
+    text-decoration: none;
+}
+
+.menu > li 
+{
     margin: 0 1rem;
     overflow: hidden;
-  }
-  
-  .menu-button-container {
+}
+
+.menu-button-container 
+{
     display: none;
     height: 100%;
     width: 30px;
@@ -51,15 +68,17 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  #menu-toggle {
+}
+
+#menu-toggle 
+{
     display: none;
-  }
-  
-  .menu-button,
-  .menu-button::before,
-  .menu-button::after {
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after 
+{
     display: block;
     background-color: #fff;
     position: absolute;
@@ -67,77 +86,138 @@ html, body {
     width: 30px;
     transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
     border-radius: 2px;
-  }
-  
-  .menu-button::before {
+}
+
+.menu-button::before
+{
     content: '';
     margin-top: -8px;
-  }
-  
-  .menu-button::after {
+}
+
+.menu-button::after 
+{
     content: '';
     margin-top: 8px;
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button::before {
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before 
+{
     margin-top: 0px;
     transform: rotate(405deg);
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button {
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button 
+{
     background: rgba(255, 255, 255, 0);
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button::after {
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after 
+{
     margin-top: 0px;
     transform: rotate(-405deg);
-  }
-  
-  @media (max-width: 700px) {
-    .menu-button-container {
-      display: flex;
-    }
-    .menu {
-      position: absolute;
-      top: 0;
-      margin-top: 50px;
-      left: 0;
-      flex-direction: column;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-    }
-    #menu-toggle ~ .menu li {
-      height: 0;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-    #menu-toggle:checked ~ .menu li {
-      border: 1px solid #333;
-      height: 2.5em;
-      padding: 0.5em;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-    .menu > li {
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0.5em 0;
-      width: 100%;
-      color: white;
-      background-color: #222;
-    }
-    .menu > li:not(:last-child) {
-      border-bottom: 1px solid #444;
-    }
-  }
-@media only screen and (max-width: 641px) 
+}
+
+
+/* Footer */ 
+.footer
 {
-    html
+    position: relative;
+    bottom:0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: green;
+    text-align: center;
+    padding: 1px;
+    font-size: large;
+}
+
+@media (min-width: 701px)
+{
+    /* Making animation on Nav bar hover */
+
+.menu li
+{
+    position: relative;
+}
+
+ul a:hover
+{
+    color: green;
+}
+
+section a::before
+{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 200ms;
+}
+
+ul a:hover::before
+{
+    width: 100%;
+}
+
+/* Animation End */
+}
+
+@media (max-width: 700px) 
+{
+    .menu-button-container 
     {
-        background-color: black;
+        display: flex;
+    }
+
+    .menu 
+    {
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-toggle ~ .menu li 
+    {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked ~ .menu li
+    {
+        border: 1px solid #333;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu > li 
+    {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: #222;
+    }
+
+    .menu > li:not(:last-child) 
+    {
+        border-bottom: 1px solid #444;
     }
 }
 
@@ -238,6 +318,8 @@ header::after
     margin: 0;
 }
 
+LOOK HERE!!!
+
 .menuContainer li
 {
     display: inline-block;
@@ -279,19 +361,6 @@ nav a:hover::before
 }
 
 
-/* Footer 
-.footer
-{
-    position: relative;
-    bottom:0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: green;
-    text-align: center;
-    padding: 1px;
-}
 
 
 */
