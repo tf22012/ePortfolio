@@ -25,36 +25,132 @@ Description: CSS file for mainly resume page layout
     width: 50%;
 }
 
+.reName-Container h1
+{
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Rockwell", serif;
+    margin-left: 10%;
+    margin-top: 10%;
+
+}
+
 /* Resume Contact Styling */
 .reContact-Container
 {
     width: 50%;
 }
 
+.reContact-Container ul
+{
+    text-align: end;
+    list-style: none;
+    margin-right: 10%;
+    margin-top: 10%;
+    color: grey;
+    font-family: "Rockwell", serif;
+}
+
 /* Resume Intro Styling */
 .reSelfIntro-Container
 {
-    width: 100%;
+    width: 90%;
+    margin: 0 5%;
+    border-bottom: darkgrey solid 1px;
 }
+
+.reSelfIntro-Container p
+{
+    color: gray;
+    font-family: "Rockwell", serif;
+}
+
 
 /* Resume Skills Styling */
 .reSkills-Container
 {
-    width: 100%
+    width: 100%;
+    border-bottom: darkgrey solid 1px;
+    margin: 0 5%;
+}
+
+.reSkills-Container h2
+{
+    font-family: "Rockwell", serif;
+}
+
+.reSkills-Container ul
+{
+    margin-left: -4%;
+}
+
+.reSkills-Container li
+{
+    color: gray;
+    font-family: "Rockwell", serif;   
 }
 
 /* Resume Education Styling */
 .reEducation-Container
 {
-    width: 100%;
+    width: 90%;
+    margin: 0 5%;
+    border-bottom: darkgrey solid 1px;
+}
+
+.reEducation-Container h2
+{
+    font-family: "Rockwell", serif;
+}
+
+h4
+{
+    font-weight: bold;
+    color: turquoise;
+    font-family: "Rockwell", serif;
+}
+
+.school
+{
+    color: gray;
+    font-family: "Rockwell", serif;
 }
 
 /* Resume Experience Styling */
 .reExperience-Container
 {
     width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
 }
 
+.reExperience-Container
+{
+    font-family: "Rockwell", serif;
+}
+
+.reExperience-Container p
+{
+    color: gray;
+}
+
+.reExperience-Container li
+{
+    color: grey;
+}
+
+.jobTitle
+{
+    color: turquoise;
+    font-weight: bold;
+}
+
+.jobLocation
+{
+    font-weight: bold;
+}
 /* 
 @media only screen and (max-width: 768px) {
 	/*Mobile Phone*/
