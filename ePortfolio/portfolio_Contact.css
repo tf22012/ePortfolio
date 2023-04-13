@@ -5,7 +5,7 @@ Date: 2023/04/12
 Description: CSS file for Eportfolio site GoalPage.
 */
 
-h1
+#pageTitle h1
 {
     margin-left: 1.75%;
 }
@@ -37,18 +37,21 @@ p
 
 form
 {
-    border: darkgreen solid 1px;
+    border: darkgreen solid 2px;
+    background-color: #333333;
 }
 
 h3
 {
     text-align: center;
+    color: azure;
 }
 
 .contact label
 {
     display: block;
     text-align: center;
+    color: azure;
 }
 
 input[type="text"], textarea {
@@ -59,7 +62,7 @@ input[type="text"], textarea {
 
 input, textarea
 {
-    border: green solid 1px;
+    border: green solid 1.5px;
     text-align: center;
 }
 
@@ -78,30 +81,41 @@ button[type="submit"] {
     display: flex;
     flex-wrap: wrap;
     align-items: start;
-    justify-content: space-evenly;
     height: 100%;
 }
 
 .personalContactInfo
 {
-    width: 33%;
-    height: 100%;
+    width: 50%;
+    height: 75%;
 }
 
 .visitorContactInfo
 {
-    width: 33%;
+    width: 50%;
     height: 100%;
+}
+
+.visitorContactInfo form
+{
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 55%;
+    height: 70%;
 }
 
 .selfImage
 {
+    display: flex;
     height: 100%;
-    width: 33%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 .selfImage img 
 {
-    margin-left: 25%;
-    width: 50%;
+    margin-left: 5%;
+    width: 40%;
+    height: 60%;
 }
