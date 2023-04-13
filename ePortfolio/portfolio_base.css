@@ -11,6 +11,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: darkgrey;
     margin: 0;
+    
 }
 
 a:link {
@@ -86,6 +87,22 @@ header::after
     text-transform: uppercase;
     font-size: 0.85rem;
 }
+
+/* Footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: green;
+    text-align: center;
+  }
+  
+  .footer footer {
+    padding: 10px 0;
+  }
+  
 
 /*
 #navagationMenu > li {
