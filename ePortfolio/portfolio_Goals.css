@@ -42,9 +42,19 @@ Description: CSS file for Eportfolio site GoalPage.
     width: 50%;
 }
 
+.shortTermGoals h2
+{
+    text-align: center;
+}
+
 .longTermGoals
 {
     width: 50%;
+}
+
+.longTermGoals h2
+{
+    text-align: center;
 }
 
 

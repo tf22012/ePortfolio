@@ -6,11 +6,60 @@ Description: CSS file for mainly resume page layout
 */
 
 
+.flex-container
+{
+    background-color: white;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+}
 
+/* Resume Name Styling */
+
+.reName-Container
+{
+    width: 50%;
+}
+
+/* Resume Contact Styling */
+.reContact-Container
+{
+    width: 50%;
+}
+
+/* Resume Intro Styling */
+.reSelfIntro-Container
+{
+    width: 100%;
+}
+
+/* Resume Skills Styling */
+.reSkills-Container
+{
+    width: 100%
+}
+
+/* Resume Education Styling */
+.reEducation-Container
+{
+    width: 100%;
+}
+
+/* Resume Experience Styling */
+.reExperience-Container
+{
+    width: 100%;
+}
+
+/* 
 @media only screen and (max-width: 768px) {
 	/*Mobile Phone*/
 
-    /*Change content to display in 1 column*/
+    /*Change content to display in 1 column
 	.resume-grid-container {
         display: flex;
         flex-direction: column;
@@ -27,7 +76,7 @@ Description: CSS file for mainly resume page layout
 @media only screen and (min-width: 769px) {
 	/*Tablet Phone*/
 
-	/*Resume Grid-Layout*/
+	/*Resume Grid-Layout
     .reHeading{ grid-area: reHeading; }
     .reContact{ grid-area: reContact; }
     .reProfile{ grid-area: reProfile; }
@@ -45,6 +94,7 @@ Description: CSS file for mainly resume page layout
         padding: 10px;
         width: 80%;
         margin-left: 10%;
+        margin-bottom: 2.5%;
         background-color: white;
     }
 
@@ -87,6 +137,8 @@ Description: CSS file for mainly resume page layout
 }
 
 @media only screen and (min-width: 1024px) {
-	/*Desktop*/
+	/*Desktop
 
-}
+} 
+*/
+
