@@ -5,11 +5,17 @@ Date: 2023/04/11
 Description: CSS file for Skill Page 
 */
 
+
 h1
 {
     text-align: center;
 }
 
+img 
+{
+    border-radius: 10%;
+}
+
 .flex-container
 {
     display: flex;
@@ -26,21 +32,6 @@ h1
 
 /* HTML Skill Section */
 
-.htmlImage
-{
-    width: 50%;
-}
-
-.htmlImage img
-{
-    width: 100%;
-    height: 100%;
-}
-
-.htmlSkill
-{
-    width: 50%;
-}
 
 .htmlSkill p
 {
@@ -49,28 +40,6 @@ h1
 }
 
 /* CSS Skill Section */
-
-.cssSkillContainer 
-{
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.cssImage 
-{
-    width: 50%;
-}
-
-.cssImage img 
-{
-    width: 100%;
-    height: 100%;
-}
-
-.cssSkill 
-{
-    width: 50%;
-}
 
 .cssSkill p 
 {
@@ -81,24 +50,165 @@ h1
 
 /* JavaScript Skill Section */
 
-.javaScriptImage
-{
-    width: 50%;
-}
-
-.javaScriptImage img
-{
-    width: 100%;
-    height: 100%;
-}
-
-.javaScriptSkill
-{
-    width: 50%;
-}
-
 .javaScriptSkill p
 {
     margin: 0;
     padding: 3.5% 5%;
+}
+
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 700px
+   =============================================
+*/
+
+@media (min-width: 701px) 
+{
+
+    .flex-container
+    {   
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    /* HTML Skill Section */
+
+    .htmlSkill
+    {
+        width: 50%;
+        margin: auto auto;
+    }
+
+    .htmlImage
+    {
+        width: 50%;
+    }
+
+    .htmlImage img
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* CSS Skill Section */
+
+    .cssSkillContainer 
+    {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .cssImage 
+    {
+        width: 50%;
+    }
+
+    .cssImage img 
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cssSkill 
+    {
+        width: 50%;
+        margin: auto auto;
+    }
+
+    /* JavaScript Skill Section */
+
+    .javaScriptSkill
+    {
+        width: 50%;
+        margin: auto auto;
+    }
+
+    .javaScriptImage
+    {
+        width: 50%;
+    }
+
+    .javaScriptImage img
+    {
+        width: 100%;
+        height: 100%;
+    } 
+    
+}
+
+/* ===============================
+   Mobile Styles: 0px to 700px 
+   ===============================
+*/
+
+@media (max-width: 700px) 
+{
+
+    /* HTML Skill Section */
+
+    .htmlImage
+    {
+        width: 100%;
+    }
+
+    .htmlImage img
+    {
+        width: 90%;
+        height: 95%;
+        display: block;
+        margin: auto auto;
+
+    }
+
+    .htmlSkill
+    {
+        width: 100%;
+        display: block;
+        margin: auto auto;
+    }
+
+
+    /* CSS Skill Section */
+
+    .cssImage 
+    {
+        width: 100%;
+    }
+
+    .cssImage img 
+    {
+        width: 90%;
+        height: 90%;
+        display: block;
+        margin: auto auto;
+    }
+
+    .cssSkill 
+    {
+        width: 100%;
+        display: block;
+        margin: auto auto;
+    }
+
+    /* JavaScript Skill Section */
+    .javaScriptImage
+    {
+        width: 100%;
+    }
+
+    .javaScriptImage img
+    {
+        width: 90%;
+        height: 100%;
+        display: block;
+        margin: auto auto;
+    }
+    
+    .javaScriptSkill
+    {
+        width: 100%;
+        display: block;
+        margin: auto auto;
+    }
+
 }
