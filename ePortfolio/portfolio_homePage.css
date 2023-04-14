@@ -45,6 +45,12 @@ html
     {
         width: 100%;
     }
+    p
+    {
+        display: block;
+        width: 90%;
+        margin: 0 5%;
+    }
 }
 
 /* ===============================
@@ -57,5 +63,11 @@ html
     canvas
     {
         height: 100vh;
+    }
+    p
+    {
+        display: block;
+        width: 90%;
+        margin: 0 5%;
     }
 }
