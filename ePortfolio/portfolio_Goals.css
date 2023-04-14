@@ -5,13 +5,6 @@ Date: 2023/04/11
 Description: CSS file for Eportfolio site GoalPage.
 */
 
-.goalImageSection h1
-{
-    text-align: center;
-    color: azure;
-    font-size: 4rem;
-}
-
 .goalImageSection
 {
     height: 100vh;
@@ -23,6 +16,15 @@ Description: CSS file for Eportfolio site GoalPage.
     align-items: center;
 }
 
+
+.goalImageSection h1
+{
+    text-align: center;
+    color: azure;
+    font-size: 4rem;
+}
+
+
 .goalImageSection h1
 {
     text-align: center;
@@ -33,29 +35,62 @@ Description: CSS file for Eportfolio site GoalPage.
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-evenly;
     background-color: grey;
 }
 
-.shortTermGoals
-{
-    width: 50%;
-}
+
 
 .shortTermGoals h2
 {
     text-align: center;
 }
 
-.longTermGoals
-{
-    width: 50%;
-}
 
 .longTermGoals h2
 {
     text-align: center;
 }
+
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 700px
+   =============================================
+*/
+
+@media (min-width: 701px) 
+{
+    .shortTermGoals
+    {
+        width: 50%;
+    }
+
+    .longTermGoals
+    {
+        width: 50%;
+    }
+}
+
+/* ===============================
+   Mobile Styles: 0px to 700px 
+   ===============================
+*/
+
+@media (max-width: 700px) {
+
+    .goalImageSection h1
+    {
+        font-size: 3rem;
+    }
+
+    .shortTermGoals {
+      width: 100%;
+    }
+  
+    .longTermGoals {
+      width: 100%;
+    }
+  }
+  
 
 
 /*
