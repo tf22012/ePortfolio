@@ -1,18 +1,27 @@
 .heroSection {
     background: black;
-    height: 100%;
     overflow: hidden;
 }
 
-h1
+h2
 {
     color: green;
     text-align: center;
 }
 
+p
+{
+    color: green;
+}
+
 body {
     margin: 0;
     padding: 0;
+}
+
+html
+{
+    background-color: black ;
 }
 
 /* =============================================
@@ -22,9 +31,9 @@ body {
 
 @media (min-width: 701px)
 {
-    body
+    .heroSection
     {
-        width: 100%;
+        height: 100vh;
     }
 
     canvas
@@ -32,6 +41,10 @@ body {
         width: 100%;
     }
 
+    body
+    {
+        width: 100%;
+    }
 }
 
 /* ===============================
@@ -43,6 +56,6 @@ body {
 {
     canvas
     {
-        height: 100%;
+        height: 100vh;
     }
 }

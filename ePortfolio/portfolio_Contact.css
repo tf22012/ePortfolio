@@ -41,7 +41,7 @@ input, textarea
 /* Contact Form */
 .ContactInfo form
 {
-    text-align: center;
+    text-align: left;
     color: green;
     border: darkgreen solid 2px;
     background-color: #333333;
@@ -50,12 +50,36 @@ input, textarea
 label
 {
     text-decoration: underline;
+    margin-left: 5%;
 }
 
 h3
 {
     color: azure;
+    margin-left: 5%;
 }
+
+.ContactInfo form input[type="text"],
+.ContactInfo form textarea {
+    width: 80%;
+    height: 5%;
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 5%;
+}
+
+form button[type="submit"] {
+    margin: 4% 5%;
+    width: 30%;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+
+  }
+
 
 /* =============================================
    Tablet and Desktop Styles: greater than 700px
