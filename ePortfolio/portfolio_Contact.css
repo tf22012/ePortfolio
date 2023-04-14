@@ -5,46 +5,216 @@ Date: 2023/04/12
 Description: CSS file for Eportfolio site GoalPage.
 */
 
-#pageTitle h1
+ h1
 {
-    margin-left: 1.75%;
+    text-align: center;
 }
 
-p
-{
-    margin-left: 5%;
-}
 
 
 .emails 
 {
     font-style: italic;
-    margin-left: 5%;
 }
 
 
 .contactMethod
 {
-    margin-left: 5%;
     font-weight: bold;
     text-decoration: underline;
 }
 
-
-/* Visitor Contact Info Form */
-
-/* test */
-
-form
+input
 {
+    border-radius: 7px;
+} 
+
+/* flex grid layout */
+
+.flex-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+/* Contact Form */
+.ContactInfo form
+{
+    text-align: center;
+    color: green;
     border: darkgreen solid 2px;
     background-color: #333333;
 }
 
 h3
 {
-    text-align: center;
     color: azure;
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 700px
+   =============================================
+*/
+
+@media (min-width: 701px) 
+{
+    .ContactInfo
+    {
+        width: 50%;
+        height: 100%;
+    }
+    
+    /* Visitor Contact Info Form */
+    
+    .ContactInfo form
+    {
+        width: 90%;
+        margin: 0% 5%;
+        margin-bottom: 5%;
+        height: 90%;
+        
+    }
+    
+    /* Self Image Elements Properties */
+    
+    .selfImage
+    {
+        height: 100%;
+        width: 50%;
+    }
+    
+    .selfImage img 
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;      
+        width: 50%;
+        height: 60%;
+    }
+    
+    .selfImage p
+    {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+    
+}
+
+
+/* ===============================
+   Mobile Styles: 0px to 700px 
+   ===============================
+*/
+
+@media (max-width: 700px) 
+{
+    .flex-container
+    {
+        flex-wrap: wrap-reverse;
+    }
+    .ContactInfo
+    {
+        width: 100%;
+        height: 50%;
+    }
+
+    .selfImage
+    {
+        width: 100%;
+        height: 50%;
+    }
+
+    /* contact form elements rules */
+    .ContactInfo form
+    {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    /* Personal contact elements rules */
+    .selfImage img
+    {
+        display: flex;
+        float: left;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 100%;
+        margin-right: 5%;
+    }
+
+    .selfImage p
+    {
+        overflow: auto;
+        margin: 10% 5%;
+    }
+
+}
+
+/* 
+
+.visitorContactInfo
+{
+    width: 40%;
+    height: 50%;
+    border: 1px solid black;
+}
+
+form {
+    border: darkgreen solid 2px;
+    background-color: #333333;
+    width: 80%;
+    margin: auto auto;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+  
+  form input,
+  form textarea {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #dddddd;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  
+  form input::placeholder,
+  form textarea::placeholder {
+    color: #333333;
+  }
+  
+  form button[type="submit"] {
+    display: block;
+    margin: 1rem auto;
+    width: 30%;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+h3
+{
+    text-align: left;
+    color: azure;
+    font-size: 2rem;
 }
 
 .contact label
@@ -62,60 +232,14 @@ input[type="text"], textarea {
 
 input, textarea
 {
-    border: green solid 1.5px;
     text-align: center;
 }
 
 
 button[type="submit"] {
     display: block;
-    margin: 0 auto;
-    width: 45%;
+    margin: auto auto;
+    width: 30%;
   }
-  
 
-/* flex grid layout */
-
-.flex-container
-{
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-}
-
-.ContactInfo
-{
-    width: 50%;
-    height: 100%;
-}
-/*
-.visitorContactInfo
-{
-    width: 40%;
-    height: 50%;
-    border: 1px solid black;
-}
 */
-.visitorContactInfo form
-{
-    margin-left: 5%;
-    margin-bottom: 5%;
-    width: 55%;
-    height: 70%;
-}
-
-.selfImage
-{
-    height: 100%;
-    width: 50%;
-    border: 1px solid black;
-}
-
-.selfImage img 
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;      
-    width: 50%;
-    height: 60%;
-}
