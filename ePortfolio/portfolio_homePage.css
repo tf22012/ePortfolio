@@ -5,6 +5,11 @@
     width: 100%;
 }
 
+h1
+{
+    color: green;
+    text-align: center;
+}
 canvas
 {
     width: 100%;
